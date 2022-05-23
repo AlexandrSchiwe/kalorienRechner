@@ -1,0 +1,57 @@
+body > div {
+    border: 1px solid blue;
+    width: 400px;
+    height: 80vh;
+}
+
+form > input {
+    display: block;
+}
+
+h1 {
+    text-align: center;
+}
+
+select {
+    width: 90%;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.parent > div {
+    width: 100%;
+    height: 50px;
+
+}
+    
+.div1 { grid-area: 1 / 2 / 2 / 3; }
+.div2 { grid-area: 1 / 3 / 2 / 4; }
+.div3 { grid-area: 2 / 1 / 3 / 2; }
+.div4 { grid-area: 2 / 2 / 3 / 3; }
+.div5 { grid-area: 2 / 3 / 3 / 4; }
+.div6 { grid-area: 3 / 1 / 4 / 2; }
+.div7 { grid-area: 3 / 2 / 4 / 3; }
+.div8 { grid-area: 3 / 3 / 4 / 4; }
+
+/* 
+if(male.checked == true && activity === "1") {
+        // totalCaloriesOutput.value = 0.95 * (664,7 + (13.7 * (weight.value)) + (5 * (height.value)) - (6.8 * (age.value)));
+        totalCaloriesOutput.innerHTML = 0.95 * (664,7 + (13.7 * (weight.value)) + (5 * (height.value)) - (6.8 * (age.value)).Math.round());
+    } else if(male.checked == true && activity === "2") {
+        totalCaloriesOutput.innerHTML = 1.2 * (664,7 + (13.7 * (weight.value)) + (5 * (height.value)) - (6.8 * (age.value)).Math.round());
+    } else if(male.checked == true && activity === "3") {
+        totalCaloriesOutput.innerHTML = 1.5 * (664,7 + (13.7 * (weight.value)) + (5 * (height.value)) - (6.8 * (age.value)).Math.round());
+    } else if(male.checked == true && activity === "4") {
+        totalCaloriesOutput.innerHTML = 1.7 * (664,7 + (13.7 * (weight.value)) + (5 * (height.value)) - (6.8 * (age.value)).Math.round());
+    } else if(male.checked == true && activity === "5") {
+        totalCaloriesOutput.innerHTML = 1.9 * (664,7 + (13.7 * (weight.value)) + (5 * (height.value)) - (6.8 * (age.value)).Math.round());
+    } else if(male.checked == true && activity === "6") {
+        totalCaloriesOutput.innerHTML = 2.2 * (664,7 + (13.7 * (weight.value)) + (5 * (height.value)) - (6.8 * (age.value)).Math.round());
+    }
+*/

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalorienrechner</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div>
+        <h1>Kalorien Rechner</h1>
+        <form action="" onsubmit="return false">
+            <label for="">Körpergröße</label>
+            <input type="text" name="" id="height">
+            <label for="">Alter</label>
+            <input type="text" name="" id="age">
+            <label for="">Gewicht</label>
+            <input type="text" name="" id="weight">
+            <p>Geschlecht</p>
+            <label for="">Männlich</label>
+            <input type="radio" name="Männlich" id='male'>
+            <label for="">Weiblich</label>
+            <input type="radio" name="Weiblich" id='female'>
+            <select id="list">
+                <option value="1">Schlafen</option>
+                <option value="2">Nur sitzen oder liegen</option>
+                <option value="3">Ausschließlich sitzende Tätigkeit mit wenig oder keiner körperlichen Aktivität in der Freizeit, z.B. Büroarbeit</option>
+                <option value="4">Sitzende Tätigkeit mit zeitweilig gehender oder stehender Tätigkeit, z.B. Studierende, Fließbandarbeiter, Laboranten, Kraftfahrer</option>
+                <option value="5">Überwiegend gehende oder stehende Tätigkeit, z.B. Verkäufer, Kellner, Handwerker, Mechaniker, Hausfrauen</option>
+                <option value="6">Körperlich anstrengende berufliche Arbeit</option>
+            </select>
+            <input type="button" value="submit" onclick="calculate()">
+        </form>
+        <div class="parent">
+            <div class="div1">Kcal</div>
+            <div class="div2">Kjoul</div>
+            <div class="div3"><p>Grundumsatz:</p></div>
+            <div class="div4"><p ><span id="baseCaloriesOutput"></span></p></div>
+            <div class="div5"> </div>
+            <div class="div6"><p>Gesamtkalorien:</p></div>
+            <div class="div7"><p><span id="totalCaloriesOutput"></span> </p></div>
+            <div class="div8"><p id="joule"></p></div>
+        </div>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
